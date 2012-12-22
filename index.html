@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <style>
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}
+        .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.clearfix{display:inline-block;zoom:1;*display:inline;}/* Hides from IE-mac \*/ * html .clearfix{height:1%;}.clearfix{display:block;}/* End hide from IE-mac */
         body{
             background:url(img/bg1.png) repeat scroll 0 0;
         }
@@ -14,21 +16,17 @@
             width:990px;
             height:576px;
             margin:0 auto;
+            overflow:hidden;
+        }
+        .hd img{
+            vertical-align:top;
         }
         .content{
+            position:relative;
+            overflow:hidden;
             width:990px;
             margin:0 auto;
             background:url(img/bg.png) repeat-y scroll 0 0;
-        }
-        .mod{
-            width:100%;
-            height:717px;
-            background:url(img/mod-bg.png) no-repeat scroll right 0;
-        }
-        .title{
-            width:66px;
-            height:100%;
-            text-indent:-9999px;
         }
         .t1{
             background:url(img/t1.png) no-repeat scroll 0 0;
@@ -36,6 +34,112 @@
         .t2{
             background:url(img/t2.png) no-repeat scroll 0 0;
         }
+        .xc{
+            position:absolute;
+            left:122px;
+            width:157px;
+            height:76px;
+            text-indent:-9999px;
+            background:url(img/tt.png) no-repeat scroll 0 0;
+        }
+
+        .mod{
+            width:100%;
+        }
+        .mod .hd{
+            margin-left:19px;
+            float:left;
+            width:66px;
+            height:100%;
+        }
+        .mod .hd .title{
+            float:left;
+            width:66px;
+            height:100%;
+            text-indent:-9999px;
+        }
+        .mod .bd{
+            float:right;
+            width:902px;
+            position:relative;
+        }
+        .mod .bd .bd-t{
+            width:902px;
+            height:29px;
+            background:url(img/bd-title.png) no-repeat scroll 0 0;
+        }
+        .mod .bd .bd-b{
+            width:902px;
+            height:176px;
+            background:url(img/bd-bottom.png) no-repeat scroll 0 0;
+        }
+        .mod .bd-c{
+            width:902px;
+            background:url(img/bd-c.png) repeat-y scroll 0 0;
+        }
+        .mod .bd .list{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+
+
+        .juesai{
+            margin-top:40px;
+            height:734px;
+        }
+        .juesai .bd-c{
+            height:527px;
+        }
+
+        .bs1115{
+            height:997px;
+        }
+        .bs1115 .bd-c{
+            height:797px;
+        }
+        .bs1115 .hd{
+            margin-left:10px;
+        }
+
+        .list li{
+            display:inline;
+            float:left;
+            margin:12px 0 0 4px;
+            list-style:none;
+        }
+        .list li img{
+            width:137px;
+            height:90px;
+            padding:0 2px 4px 0;
+            background:url(img/sp-i.png) no-repeat scroll 0 0;
+        }
+        .list li a{
+            font-size:12px;
+            color:#ffffff;
+            text-decoration:none;
+        }
+        .list li span{
+            display:block;
+            width:129px;
+            line-height:20px;
+            padding:2px 6px 2px 4px;
+            background:url(img/sp_t1.png) repeat scroll 0 bottom;
+        }
+        .list .list-main{
+            margin:58px 0 0 20px;;
+            width:278px;
+            float:left;
+        }
+        .list .list-all{
+            float:left;
+            margin-left:10px;
+            width:580px;
+        }
+        .list .list-all h3{
+            margin:25px 0 0 0;
+        }
+
     </style>
 
 	</head>
@@ -47,28 +151,184 @@
         <img src="img/hd.png"/>
      </div>
      <div class="content">
+         <div class="xc">现场视频</div>
+         <!--决赛-->
+         <div class="mod juesai">
+            <div class="hd"><h2 class="title t1">总决赛</h2></div>
+            <div class="bd">
+               <div class="bd-t"></div>
+               <div class="bd-c"></div>
+               <div class="bd-b"></div>
+               <div class="list">
+                   <div class="list-main">
+                       <img src="img/sp-main.png"/>
+                   </div>
+                   <div class="list-all">
+                       <h3><img src="img/8-4.png"/> </h3>
+                       <ul class="clearfix">
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                       </ul>
+                       <h3><img src="img/4.png"/> </h3>
+                       <ul class="clearfix">
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                       </ul>
+                       <h3><img src="img/4-1.png"/> </h3>
+                       <ul class="clearfix">
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                           <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
 
-         <div class="mod">
-            <h2 class="title t1">总决赛</h2>
-
+         </div>
+         <!--比赛-->
+         <div class="mod bs1115">
+             <div class="hd"><h2 class="title t2">比赛</h2></div>
+             <div class="bd">
+                 <div class="bd-t"></div>
+                 <div class="bd-c"></div>
+                 <div class="bd-b"></div>
+                 <div class="list">
+                     <div class="list-main">
+                         <img src="img/sp-main.png"/>
+                     </div>
+                     <div class="list-all">
+                         <h3><img src="img/24-12.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                         <h3><img src="img/12-8.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
 
          </div>
 
-         <div class="mode" style="width:990px;height:400px;background:url(img/bg22.png) repeat-y scroll 0 0">
 
+
+
+         <div class="mod bs1114">
+             <div class="hd"><h2 class="title t1">比赛</h2></div>
+             <div class="bd">
+                 <div class="bd-t"></div>
+                 <div class="bd-c"></div>
+                 <div class="bd-b"></div>
+                 <div class="list">
+                     <div class="list-main">
+                         <img src="img/sp-main.png"/>
+                     </div>
+                     <div class="list-all">
+                         <h3><img src="img/8-4.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                         <h3><img src="img/4.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                         <h3><img src="img/4-1.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                     </div>
+
+                 </div>
+             </div>
 
          </div>
 
-         <div class="mod">
-            <h2 class="title t2">比赛</h2>
 
+         <div class="mod bs1113">
+             <div class="hd"><h2 class="title t1">比赛</h2></div>
+             <div class="bd">
+                 <div class="bd-t"></div>
+                 <div class="bd-c"></div>
+                 <div class="bd-b"></div>
+                 <div class="list">
+                     <div class="list-main">
+                         <img src="img/sp-main.png"/>
+                     </div>
+                     <div class="list-all">
+                         <h3><img src="img/8-4.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                         <h3><img src="img/4.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                         <h3><img src="img/4-1.png"/> </h3>
+                         <ul class="clearfix">
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                             <li><a href="#"><img src="img/222.png"/><span>小千</span></a></li>
+                         </ul>
+                     </div>
 
-         </div>
-
-
-         <div class="mod">
-
-
+                 </div>
+             </div>
 
          </div>
 
